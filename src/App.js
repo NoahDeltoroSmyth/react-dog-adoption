@@ -1,6 +1,7 @@
 import { NavLink, Switch, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import './App.css';
+import DogDetail from './views/DogDetail';
 import DogList from './views/DogList';
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
           <Route path="/dogs">
             <DogList />
           </Route>
-          <Route path="/dogs/:id"></Route>
+          <Route path="/dogs/:id">
+            <DogDetail />
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>

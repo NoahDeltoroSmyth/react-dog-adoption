@@ -14,6 +14,6 @@ export async function fetchDogs() {
 }
 
 export async function getDogsById(id) {
-  let request = await client.from('dogs').select('*').match({ id }).single();
+  let request = await client.from('dogs').select(`*, dogs(*)`).match({ id: id }).single();
   return request;
 }
