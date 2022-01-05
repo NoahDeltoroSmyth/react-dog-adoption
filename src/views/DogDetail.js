@@ -4,16 +4,26 @@ import { useParams } from 'react-router-dom';
 import Dogs from '../component/Dogs';
 
 export default function DogDetail() {
+  const [dog, setDog] = useState([]);
+  const [loading, setLoading] = useState(true);
   const { id } = useParams();
-  const [dog, setDog] = useState(null);
-  //   const params = useParams();
 
   useEffect(() => {
-    getDogsById(id).then(({ data }) => setDog(data));
+    const fetchData = async () => {
+      const data = await getDogsById(id);
+      setDog(data);
+      setLoading(false);
+    };
+    fetchData();
   }, [id]);
+
+  if (loading) {
+    return <h1>loading</h1>;
+  }
+
   return (
     <div>
-      <Dogs {...dog} />
+      <Dogs {...dog.data} />
     </div>
   );
 }

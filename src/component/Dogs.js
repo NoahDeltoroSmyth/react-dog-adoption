@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Dogs({ name, breed, image, age, bio }) {
+export default function Dogs({ name, breed, image, age }) {
   return (
     <div>
       <h1>{name}</h1>
