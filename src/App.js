@@ -9,12 +9,12 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <header>
-          <NavLink exact to="/dogs">
+          <NavLink exact to="/">
             Home
           </NavLink>
         </header>
         <Switch>
-          <Route exact path="/dogs">
+          <Route exact path="/">
             <DogList />
           </Route>
           <Route path="/dogs/:id">
