@@ -1,6 +1,7 @@
-import { NavLink, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
 import './App.css';
+import Header from './component/Header';
 import DogDetail from './views/DogDetail';
 import DogList from './views/DogList';
 
@@ -8,11 +9,12 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <header>
+        <Header />
+        {/* <header>
           <NavLink exact to="/">
             Home
           </NavLink>
-        </header>
+        </header> */}
         <Switch>
           <Route exact path="/">
             <DogList />
