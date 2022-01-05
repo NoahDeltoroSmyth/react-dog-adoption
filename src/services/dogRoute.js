@@ -13,7 +13,7 @@ export async function fetchDogs() {
   return data;
 }
 
-// export async function getDogsById(id) {
-//   let request = await client.from('dogs').select('*').match({ id }).single();
-//   return request;
-// }
+export async function getDogsById(id) {
+  let request = await client.from('dogs').select('*').match({ id }).single();
+  return request;
+}
