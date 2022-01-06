@@ -12,6 +12,7 @@ export default function DogDetail() {
     const fetchData = async () => {
       const data = await getDogsById(id);
       setDog(data);
+      console.log(data);
       setLoading(false);
     };
     fetchData();
@@ -23,7 +24,7 @@ export default function DogDetail() {
 
   return (
     <div>
-      <Dogs {...dog.data} />
+      <Dogs {...dog} />
     </div>
   );
 }
