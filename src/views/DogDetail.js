@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { getDogsById } from '../services/dogRoute';
 import { useParams } from 'react-router-dom';
 import Dogs from '../component/Dogs';
+import { Link } from 'react-router-dom';
 
 export default function DogDetail() {
   const [dog, setDog] = useState([]);
@@ -23,8 +24,13 @@ export default function DogDetail() {
   }
 
   return (
-    <div>
-      <Dogs {...dog} />
-    </div>
+    <>
+      <div className="dog-detail">
+        <Dogs {...dog} />
+      </div>
+      <div>
+        <Link to={`/dogs/${id}/edit`}>Edit</Link>
+      </div>
+    </>
   );
 }

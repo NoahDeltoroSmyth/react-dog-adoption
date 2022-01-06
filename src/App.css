@@ -14,5 +14,26 @@
 }
 
 img {
-  width: 300px;
+  width: 350px;
+}
+
+.dog-card {
+  background-color: peachpuff;
+  margin: 10px;
+  width: 450px;
+  height: 425px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.dog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dog-detail {
+  display: flex;
+  justify-content: center;
 }
