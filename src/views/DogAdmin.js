@@ -1,31 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import DogForm from '../component/DogForm';
-import { getDogsById, updateDog } from '../services/dogRoute';
-import { useParams } from 'react-router-dom';
+import { addDog } from '../services/dogRoute';
 
-export default function DogEdit() {
+export default function DogAdmin() {
   const [name, setName] = useState('');
   const [breed, setBreed] = useState('');
   const [age, setAge] = useState('');
   const [bio, setBio] = useState('');
   const [image, setImage] = useState('');
 
-  const params = useParams();
-  useEffect(() => {
-    const fetchData = async () => {
-      const resp = await getDogsById(params.id);
-      setName(resp.name);
-      setBreed(resp.breed);
-      setAge(resp.age);
-      setBio(resp.bio);
-      setImage(resp.image);
-    };
-    fetchData();
-  }, [params.id]);
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await updateDog(params.id, name, breed, age, bio, image);
+    await addDog(name, breed, age, bio, image);
   };
 
   return (

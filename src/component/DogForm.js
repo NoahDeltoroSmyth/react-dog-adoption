@@ -11,6 +11,7 @@ export default function DogForm({
   setBio,
   image,
   setImage,
+  handleSubmit,
 }) {
   return (
     <div className="form">
@@ -70,6 +71,9 @@ export default function DogForm({
               setImage(e.target.value);
             }}
           />
+        </div>
+        <div className="button">
+          <button onClick={handleSubmit}>Save</button>
         </div>
       </form>
     </div>
