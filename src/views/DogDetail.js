@@ -26,7 +26,7 @@ export default function DogDetail() {
   return (
     <>
       <div className="dog-detail">
-        <Dogs {...dog} />
+        <Dogs {...dog} showInfo={true} />
       </div>
       <div>
         <Link to={`/dogs/${id}/edit`}>Edit</Link>

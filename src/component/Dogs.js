@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Dogs({ id, name, breed, image, age }) {
+export default function Dogs({ name, breed, image, age, bio, showInfo = false }) {
   return (
     <div className="dog-card">
       <h1>{name}</h1>
@@ -9,6 +9,11 @@ export default function Dogs({ id, name, breed, image, age }) {
       <p>
         {name} is a {age} year old {breed}
       </p>
+      {showInfo && (
+        <div>
+          <p>{bio}</p>
+        </div>
+      )}
     </div>
   );
 }
