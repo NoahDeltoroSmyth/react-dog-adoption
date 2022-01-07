@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Faustina:ital,wght@1,300&family=Press+Start+2P&family=Shizuru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  border: peachpuff solid 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: powderblue;
 }
 
 .App-header {
@@ -24,15 +25,92 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  width: 350px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  margin: 5px;
+  font-family: 'Faustina', serif;
+}
+
+p {
+  margin: 15px;
+  font-family: 'Faustina', serif;
+}
+
+form {
+  font-family: 'Bungee', cursive;
+  width: 150px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px;
+}
+
+input {
+  margin: 10px;
+  font-family: 'Faustina', serif;
+  width: 150px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 13px;
+  font-family: 'Bungee', cursive;
+}
+
+.nav,
+.nav2 {
+  padding: 5px;
+}
+
+.edit {
+  font-family: 'Bungee', cursive;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.button {
+  font-family: 'Bungee', cursive;
+  padding: 6px;
+  margin: 5px;
+  background-color: peachpuff;
+  border-radius: 7px;
+}
+
+.dog-card {
+  background-color: peachpuff;
+  margin: 10px;
+  width: 450px;
+  height: 400px;
+  padding: 15px;
+  margin: 10px;
+  contain: content;
+  border-radius: 15px;
+}
+
+.dog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dog-list-header {
+  margin: 15px;
+  font-family: 'DotGothic16', sans-serif;
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Shizuru', cursive;
+}
+
+.dog-detail {
+  display: flex;
+  justify-content: center;
 }
