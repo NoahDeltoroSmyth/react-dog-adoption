@@ -40,7 +40,7 @@ export default function DogForm({
           />
         </div>
         <div className="form-control">
-          <label>Name:</label>
+          <label>Age:</label>
           <input
             placeholder="Age"
             type="text"

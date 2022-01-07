@@ -17,13 +17,13 @@ export async function getDogsById(id) {
 }
 
 export async function updateDog(id, name, breed, age, bio, image) {
-  const resp = await client.from('dogs').update({ id, name, breed, age, bio, image }).eq('id', id);
-  return checkError(resp);
+  const resp = await client.from('dogs').update({ name, breed, age, bio, image }).eq('id', id);
+  return resp;
 }
 
 export async function addDog(name, breed, age, bio, image) {
   const resp = await client.from('dogs').insert([{ name, breed, age, bio, image }]);
-  return checkError(resp);
+  return resp;
 }
 
 export async function deleteDog(id) {

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { deleteDog, getDogsById } from '../services/dogRoute';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import Dogs from '../component/Dogs';
 import { Link } from 'react-router-dom';
-import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 export default function DogDetail() {
   const [dog, setDog] = useState([]);
@@ -14,6 +13,7 @@ export default function DogDetail() {
   useEffect(() => {
     const fetchData = async () => {
       const data = await getDogsById(id);
+      console.log(data);
       setDog(data);
       setLoading(false);
     };
@@ -26,8 +26,13 @@ export default function DogDetail() {
 
   const handleDelete = async (e) => {
     e.preventDefault();
-    await deleteDog(id);
-    history.push('/');
+    try {
+      await deleteDog(id);
+      alert('successfully deleted');
+    } catch {
+      alert('unsuccessful');
+    }
+    history.push('/dogs');
   };
 
   return (

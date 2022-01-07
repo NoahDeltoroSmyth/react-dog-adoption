@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import DogForm from '../component/DogForm';
 import { getDogsById, updateDog } from '../services/dogRoute';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 
 export default function DogEdit() {
   const [name, setName] = useState('');
@@ -9,11 +9,13 @@ export default function DogEdit() {
   const [age, setAge] = useState('');
   const [bio, setBio] = useState('');
   const [image, setImage] = useState('');
-
   const params = useParams();
+  const history = useHistory();
+
   useEffect(() => {
     const fetchData = async () => {
       const resp = await getDogsById(params.id);
+      console.log(resp);
       setName(resp.name);
       setBreed(resp.breed);
       setAge(resp.age);
@@ -25,7 +27,13 @@ export default function DogEdit() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await updateDog(params.id, name, breed, age, bio, image);
+    const { status } = await updateDog(params.id, name, breed, age, bio, image);
+    if (status >= 400) {
+      alert('Status error');
+    } else {
+      alert('Successfully edited');
+      history.push('/dogs');
+    }
   };
 
   return (
