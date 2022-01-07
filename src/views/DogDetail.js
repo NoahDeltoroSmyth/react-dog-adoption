@@ -35,9 +35,12 @@ export default function DogDetail() {
       <div className="dog-detail">
         <Dogs {...dog} showInfo={true} handleDelete={handleDelete} />
       </div>
-      <div>
+      <div className="edit">
         <Link to={`/dogs/${id}/edit`}>Edit</Link>
       </div>
+      <button className="button" onClick={handleDelete}>
+        Delete
+      </button>
     </>
   );
 }

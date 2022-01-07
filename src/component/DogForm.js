@@ -72,8 +72,10 @@ export default function DogForm({
             }}
           />
         </div>
-        <div className="button">
-          <button onClick={handleSubmit}>Save</button>
+        <div>
+          <button className="button" onClick={handleSubmit}>
+            Save
+          </button>
         </div>
       </form>
     </div>

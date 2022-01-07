@@ -21,12 +21,15 @@ export default function DogList() {
   }
 
   return (
-    <div className="dog-list">
-      {dogs.map((dog) => (
-        <Link key={dog.id} to={`/dogs/${dog.id}`}>
-          <Dogs {...dog} />
-        </Link>
-      ))}
-    </div>
+    <>
+      <h1 className="dog-list-header">Adventure partners</h1>
+      <div className="dog-list">
+        {dogs.map((dog) => (
+          <Link key={dog.id} to={`/dogs/${dog.id}`}>
+            <Dogs {...dog} />
+          </Link>
+        ))}
+      </div>
+    </>
   );
 }

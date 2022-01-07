@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Dogs({ name, breed, image, age, bio, showInfo = false, handleDelete }) {
+export default function Dogs({ name, breed, image, age, bio, showInfo = false }) {
   return (
     <div className="dog-card">
       <h1>{name}</h1>
@@ -12,7 +12,6 @@ export default function Dogs({ name, breed, image, age, bio, showInfo = false, h
       {showInfo && (
         <div>
           <p>{bio}</p>
-          <button onClick={handleDelete}>Delete</button>
         </div>
       )}
     </div>

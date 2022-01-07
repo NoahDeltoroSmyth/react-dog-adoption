@@ -16,7 +16,6 @@ export default function DogAdmin() {
 
   return (
     <div>
-      <h1>Edit Dog</h1>
       <DogForm
         name={name}
         setName={setName}
