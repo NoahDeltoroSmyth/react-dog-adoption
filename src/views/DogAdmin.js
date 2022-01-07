@@ -12,9 +12,10 @@ export default function DogAdmin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { status } = await addDog(name, breed, age, bio, image);
-    if ((name.length, breed.length, age.length, bio.length, image.length === 0) || status >= 400) {
+    if ((name.length, breed.length, age.length, bio.length, image.length === 0)) {
       alert('You must add information about the doggo');
-      alert('Unsuccessful');
+    } else if (status >= 400) {
+      alert('Status error');
     } else {
       alert('Successfully added');
     }

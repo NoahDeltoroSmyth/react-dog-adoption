@@ -13,7 +13,6 @@ export default function DogDetail() {
   useEffect(() => {
     const fetchData = async () => {
       const data = await getDogsById(id);
-      console.log(data);
       setDog(data);
       setLoading(false);
     };
@@ -26,13 +25,13 @@ export default function DogDetail() {
 
   const handleDelete = async (e) => {
     e.preventDefault();
-    try {
-      await deleteDog(id);
-      alert('successfully deleted');
-    } catch {
-      alert('unsuccessful');
+    const { status } = await deleteDog(id);
+    if (status >= 400) {
+      alert('Status error');
+    } else {
+      alert('Successfully deleted');
+      history.push('/dogs');
     }
-    history.push('/dogs');
   };
 
   return (

@@ -15,7 +15,6 @@ export default function DogEdit() {
   useEffect(() => {
     const fetchData = async () => {
       const resp = await getDogsById(params.id);
-      console.log(resp);
       setName(resp.name);
       setBreed(resp.breed);
       setAge(resp.age);
