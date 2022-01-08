@@ -1,0 +1,365 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a list of dogs 1`] = `
+<div>
+  <h1
+    class="dog-list-header"
+  >
+    Adventure partners
+  </h1>
+  <div
+    class="dog-list"
+  >
+    <a
+      href="/dogs/24"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Dixie
+        </h1>
+        <p>
+          French Bulldog
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=51"
+        />
+        <p>
+          Dixie
+           is a 
+          23
+           year old 
+          French Bulldog
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/20"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Jaxon
+        </h1>
+        <p>
+          English Pointer
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=10"
+        />
+        <p>
+          Jaxon
+           is a 
+          24
+           year old 
+          English Pointer
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/8"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          King Julien & Elko
+        </h1>
+        <p>
+          cat dogs
+        </p>
+        <img
+          alt="dog-image"
+          src="https://lh3.googleusercontent.com/BSRHZgjYE7a3yrAXOsARDJ3rN-JPAl08FJz8pINIe71813rjHqn40a_4EeTbBL-7uplqq0ohB_EqQloWCAh-ABXU16U7H9F0aXZvnO2B8Oo-c4AIGWRiZSTTDyMyudUBQAxb9R38NW5JvufG5pU_O4yYllFyTDMuaXmsIBW1VCRLihxuvZD1gLQS0Y3zdHgnhQgI52Il3CpWiHINynSe6F8UnTE95iCYuQVU8zfP6jnikhdrRVBBjr86eTxDQuDNS_QS2F2LeXp4x35eijgCiewq98EIylHKDttFuNqpJVRWd3eqX7-VTEShZYKYqD7kSGWDwoiZiU3x0i5SkkP-GOrIf3SYqc36ji46H86Jjjc2VlE-ZOZNlfAiEPBlmsCydrahWCkkGuTCyxN0ROGPsV0VZ7Q5PWPC7btriY39UpDqVo9NTVrLDRiqGEV6B_sPnwXHOup3kmgKDuESMlBcbrpdTk_wh3hgT2XZAxaL1bBZO9klV6LzHwvg7-LKg0Js0XrT0cfLfd_qG8nWtD9T2ZzUMUkKCqRDCZr1JJOknIhhluWBxDutygU__ykw2HfjP_dKIC4RFtKnbhM4D55au14l4W4lyC0Ef6NsY9Et0PccZLt8-EP0Zv7eq06otV8xtk67eSUARxw-nRc8dned2oTnXdih79BHpV5FDchh91egiwe0nSIX_9N-QWBxnscbg-0FpUJZViKUsdoD7DijiORM=w1116-h837-no?authuser=0"
+        />
+        <p>
+          King Julien & Elko
+           is a 
+          1 & 2
+           year old 
+          cat dogs
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/5"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Lou
+        </h1>
+        <p>
+          Pomeranian
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=171"
+        />
+        <p>
+          Lou
+           is a 
+          6 month
+           year old 
+          Pomeranian
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/16"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Chase
+        </h1>
+        <p>
+          Longhair Lab
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=151"
+        />
+        <p>
+          Chase
+           is a 
+          28
+           year old 
+          Longhair Lab
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/17"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Brett
+        </h1>
+        <p>
+          German Shepherd
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=98"
+        />
+        <p>
+          Brett
+           is a 
+          34
+           year old 
+          German Shepherd
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/21"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Anna
+        </h1>
+        <p>
+          Longhair lab/shepherd mix
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=155"
+        />
+        <p>
+          Anna
+           is a 
+          23
+           year old 
+          Longhair lab/shepherd mix
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/1"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Willy
+        </h1>
+        <p>
+          Corgi
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=14"
+        />
+        <p>
+          Willy
+           is a 
+          3
+           year old 
+          Corgi
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/2"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Brucie
+        </h1>
+        <p>
+          PitBull Mix
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=90"
+        />
+        <p>
+          Brucie
+           is a 
+          2
+           year old 
+          PitBull Mix
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/3"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Dolly
+        </h1>
+        <p>
+          Dalmatian
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=136"
+        />
+        <p>
+          Dolly
+           is a 
+          4
+           year old 
+          Dalmatian
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/18"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Libbi
+        </h1>
+        <p>
+          White Retriever 
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=30"
+        />
+        <p>
+          Libbi
+           is a 
+          19
+           year old 
+          White Retriever 
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/19"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Liam
+        </h1>
+        <p>
+          English Bull Terrier
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=40"
+        />
+        <p>
+          Liam
+           is a 
+          18
+           year old 
+          English Bull Terrier
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/4"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Baxter 
+        </h1>
+        <p>
+          Golden Retreiver
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=144"
+        />
+        <p>
+          Baxter 
+           is a 
+          3
+           year old 
+          Golden Retreiver
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/37"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Tis
+        </h1>
+        <p>
+          woof
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=108"
+        />
+        <p>
+          Tis
+           is a 
+          1
+           year old 
+          woof
+        </p>
+      </div>
+    </a>
+  </div>
+</div>
+`;
