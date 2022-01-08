@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import DogList from './DogList';
 
-it('should render a list of dogs', async () => {
+it('should render a list of dogs 1', async () => {
   //render
   const { container } = render(
     <MemoryRouter>
@@ -10,7 +10,7 @@ it('should render a list of dogs', async () => {
     </MemoryRouter>
   );
   //load
-  await screen.findByText('Dixie');
+  await screen.findByText('French Bulldog');
   //snapshot
   expect(container).toMatchSnapshot();
 });
