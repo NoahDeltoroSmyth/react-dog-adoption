@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render a list of dogs 1`] = `
+exports[`should render a list of dogs 1 1`] = `
 <div>
   <h1
     class="dog-list-header"
@@ -10,31 +10,6 @@ exports[`should render a list of dogs 1`] = `
   <div
     class="dog-list"
   >
-    <a
-      href="/dogs/24"
-    >
-      <div
-        class="dog-card"
-      >
-        <h1>
-          Dixie
-        </h1>
-        <p>
-          French Bulldog
-        </p>
-        <img
-          alt="dog-image"
-          src="https://placedog.net/1000/563?id=51"
-        />
-        <p>
-          Dixie
-           is a 
-          23
-           year old 
-          French Bulldog
-        </p>
-      </div>
-    </a>
     <a
       href="/dogs/20"
     >
@@ -357,6 +332,31 @@ exports[`should render a list of dogs 1`] = `
           1
            year old 
           woof
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/24"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1>
+          Dixie
+        </h1>
+        <p>
+          French Bulldog
+        </p>
+        <img
+          alt="dog-image"
+          src="https://placedog.net/1000/563?id=51"
+        />
+        <p>
+          Dixie
+           is a 
+          23
+           year old 
+          French Bulldog
         </p>
       </div>
     </a>
