@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a bio 1`] = `
+<div>
+  <div
+    class="dog-detail"
+  >
+    <div
+      class="dog-card"
+    >
+      <h1>
+        Dixie
+      </h1>
+      <p>
+        French Bulldog
+      </p>
+      <img
+        alt="dog-image"
+        src="https://placedog.net/1000/563?id=51"
+      />
+      <p>
+        Dixie
+         is a 
+        23
+         year old 
+        French Bulldog
+      </p>
+      <div>
+        <p>
+          Loving and friendly, but will throw down to protect and break a finger if need be
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="edit"
+  >
+    <a
+      href="/dogs/24/edit"
+    >
+      Edit
+    </a>
+  </div>
+  <button
+    class="button"
+  >
+    Delete
+  </button>
+</div>
+`;
