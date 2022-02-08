@@ -11,6 +11,48 @@ exports[`should render a list of dogs 1 1`] = `
     class="dog-list"
   >
     <a
+      href="/dogs/57"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1 />
+        <p />
+        <img
+          alt="dog-image"
+          src=""
+        />
+        <p>
+          
+           is a 
+          fdsfsd
+           year old 
+          
+        </p>
+      </div>
+    </a>
+    <a
+      href="/dogs/58"
+    >
+      <div
+        class="dog-card"
+      >
+        <h1 />
+        <p />
+        <img
+          alt="dog-image"
+          src=""
+        />
+        <p>
+          
+           is a 
+          
+           year old 
+          
+        </p>
+      </div>
+    </a>
+    <a
       href="/dogs/20"
     >
       <div
