@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import DogForm from '../component/DogForm';
+import { useDog } from '../Context/DogContext';
 import { addDog } from '../services/dogRoute';
 
 export default function DogAdmin() {
-  const [name, setName] = useState('');
-  const [breed, setBreed] = useState('');
-  const [age, setAge] = useState('');
-  const [bio, setBio] = useState('');
-  const [image, setImage] = useState('');
+  const { name, breed, age, bio, image, setName, setBreed, setAge, setBio, setImage } = useDog();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
