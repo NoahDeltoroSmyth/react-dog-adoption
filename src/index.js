@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { DogProvider } from './Context/DogContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DogProvider>
+      <App />
+    </DogProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
